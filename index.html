@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Personal Site</title>
+  <meta name="description" content="Portfolio, projects, and contact info for Your Name." />
+  <meta property="og:title" content="Your Name — Personal Site" />
+  <meta property="og:description" content="Portfolio, projects, and contact info for Your Name." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io" />
+  <meta property="og:image" content="/social-card.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #111318;
+      --text: #e5e7eb;
+      --muted: #9aa3af;
+      --acc: #60a5fa;
+      --ring: #1f2937;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f8fafc; --panel:#ffffff; --text:#0f172a; --muted:#475569; --acc:#2563eb; --ring:#e2e8f0; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.15), transparent 60%), var(--bg);
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 80px; }
+    header { display: flex; align-items: center; gap: 20px; }
+    header img { width: 88px; height: 88px; border-radius: 50%; border: 1px solid var(--ring); }
+    h1 { font-size: clamp(28px, 4vw, 40px); margin: 0; letter-spacing: .3px; }
+    .sub { color: var(--muted); margin-top: 6px; }
+    nav { margin-top: 16px; display:flex; flex-wrap: wrap; gap: 10px; }
+    nav a { text-decoration: none; color: var(--text); padding: 8px 12px; border:1px solid var(--ring); border-radius: 999px; backdrop-filter: blur(6px); background: color-mix(in oklab, var(--panel) 92%, transparent); }
+    nav a:hover { outline: 2px solid color-mix(in oklab, var(--acc) 50%, transparent); }
+    section { margin-top: 36px; background: color-mix(in oklab, var(--panel) 96%, transparent); border: 1px solid var(--ring); border-radius: 16px; padding: 24px; }
+    section h2 { margin: 0 0 14px; font-size: 20px; letter-spacing: .2px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { padding: 16px; border:1px solid var(--ring); border-radius: 14px; background: color-mix(in oklab, var(--panel) 96%, transparent); }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    .badge { display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--ring); color: var(--muted); }
+    .footer { margin-top: 36px; color: var(--muted); font-size: 14px; }
+    a.inline { color: var(--acc); }
+    .cta { margin-top: 18px; display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--ring); text-decoration:none; color:var(--text); background: linear-gradient( to bottom right, color-mix(in oklab, var(--acc) 25%, transparent), transparent ); }
+    .cta:hover { transform: translateY(-1px); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .95em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Your avatar" />
+      <div>
+        <h1>Your Name</h1>
+        <div class="sub">Short tagline about what you do — e.g., “Engineer • Writer • Builder of tiny web things”.</div>
+        <nav>
+          <a href="https://github.com/yourusername">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourusername">LinkedIn</a>
+          <a href="mailto:you@example.com">Email</a>
+          <a href="#projects">Projects</a>
+          <a href="#now">Now</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Replace this with a quick intro: who you are, what you care about, and what kind of work you’re looking for. Keep it friendly and specific.</p>
+      <a class="cta" href="/resume.pdf">Download résumé</a>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Cool Project <span class="badge">2025</span></h3>
+          <p>What it does, why it exists, and what you learned. <a class="inline" href="https://github.com/yourusername/cool-project">Code</a> · <a class="inline" href="https://cool-project-demo.example">Live</a></p>
+        </article>
+        <article class="card">
+          <h3>Another Thing <span class="badge">2024</span></h3>
+          <p>One or two lines that show impact. Numbers help! <a class="inline" href="#">Read more</a></p>
+        </article>
+        <article class="card">
+          <h3>Tiny Tool <span class="badge">2023</span></h3>
+          <p>A small script, library, or CLI that solves a real problem. <a class="inline" href="#">Docs</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="now">
+      <h2>Now</h2>
+      <p>What are you focused on this month? Ship logs, experiments, or goals go well here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Best ways to reach you. You can embed a <code>mailto:</code> link, Calendly, or a form service like Formspree.</p>
+    </section>
+
+    <p class="footer">© <span id="year"></span> Your Name. Built with <a class="inline" href="https://pages.github.com/">GitHub Pages</a>.</p>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
