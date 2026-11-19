@@ -168,6 +168,39 @@
       letter-spacing: 0.2px;
     }
 
+    /* Experience section */
+    .experience-item + .experience-item {
+      margin-top: 24px;
+    }
+
+    .experience-heading,
+    .experience-role {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      column-gap: 16px;
+    }
+
+    .experience-heading h3 {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .experience-date {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .experience-role {
+      margin-top: 4px;
+    }
+
+    .experience-role strong {
+      font-size: 15px;
+    }
+
     .footer {
       margin-top: 36px;
       color: var(--muted);
@@ -234,12 +267,16 @@
             LinkedIn
           </a>
 
-          <a href="#education">
-            Education
-          </a>
-
           <a href="#publications">
             Publications
+          </a>
+
+          <a href="#experience">
+            Experience
+          </a>
+
+          <a href="#education">
+            Education
           </a>
 
           <a href="#contact">
@@ -265,6 +302,81 @@
         href="./resume.pdf">
         View Résumé
       </a>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <p>
+        <strong>Becky Qiao Ling Lin</strong>,
+        Yuying Li, Fengjun Li, Bo Luo.
+        Seeing Is No Longer Believing: A Security and Forensic Evaluation
+        of Generative Video Platforms.
+        Annual Computer Security Applications Conference
+        (ACSAC), 2026.
+      </p>
+
+      <p>
+        <strong>Becky Qiao Ling Lin</strong>,
+        Fengjun Li, Bo Luo.
+        When Alignment Breaks: on the Inference Integrity in
+        Text-to-Image Models.
+        European Symposium on Research in Computer Security
+        (ESORICS), 2026.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="experience-item">
+        <div class="experience-heading">
+          <h3>Palo Alto Networks</h3>
+          <span class="experience-date">May 2026 – Present</span>
+        </div>
+        <div class="experience-role">
+          <strong>Security Researcher Intern</strong>
+        </div>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-heading">
+          <h3>Institute for Information Sciences</h3>
+          <span class="experience-date">Jan 2026 – Present</span>
+        </div>
+        <div class="experience-role">
+          <strong>Graduate Research Assistant</strong>
+        </div>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-heading">
+          <h3>Dataserv</h3>
+          <span class="experience-date">Jun 2022 – Apr 2026</span>
+        </div>
+        <div class="experience-role">
+          <strong>Full Stack Developer I</strong>
+          <span class="experience-date">Feb 2026 – Apr 2026</span>
+        </div>
+        <div class="experience-role">
+          <strong>Developer II</strong>
+          <span class="experience-date">Aug 2023 – Feb 2026</span>
+        </div>
+        <div class="experience-role">
+          <strong>DevOps Intern</strong>
+          <span class="experience-date">Jun 2022 – Aug 2023</span>
+        </div>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-heading">
+          <h3>University of Kansas</h3>
+          <span class="experience-date">Aug 2025 – Dec 2025</span>
+        </div>
+        <div class="experience-role">
+          <strong>Graduate Teaching Assistant — EECS 665 Compiler Construction</strong>
+        </div>
+      </article>
     </section>
 
     <section id="education">
@@ -293,28 +405,6 @@
       <p>
         Minor in Business,
         University of Kansas (2019–2023)
-      </p>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-
-      <p>
-        <strong>Becky Qiao Ling Lin</strong>,
-        Yuying Li, Fengjun Li, Bo Luo.
-        Seeing Is No Longer Believing: A Security and Forensic Evaluation
-        of Generative Video Platforms.
-        Annual Computer Security Applications Conference
-        (ACSAC), 2026.
-      </p>
-
-      <p>
-        <strong>Becky Qiao Ling Lin</strong>,
-        Fengjun Li, Bo Luo.
-        When Alignment Breaks: on the Inference Integrity in
-        Text-to-Image Models.
-        European Symposium on Research in Computer Security
-        (ESORICS), 2026.
       </p>
     </section>
 
